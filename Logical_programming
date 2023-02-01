@@ -1,0 +1,32 @@
+package com.basic.lp;
+
+import java.util.Scanner;
+
+public class SwapTwonNumbers {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Please enter two no:");
+		int a = sc.nextInt();
+		int b =  sc.nextInt();
+		
+		SwapTwonNumbers swap = new SwapTwonNumbers();
+		System.out.println("Before swappping the no: " + a + " "+b);
+		swap.swapNumbers(a,b);
+		
+		
+	}
+
+	public void swapNumbers(int i, int j) {
+		
+		int count = 0;
+		count = i;
+		i = j;
+		j = count;
+		System.out.println("After swapping the no: "+i+" "+j);
+		
+	}
+
+}
